@@ -4,6 +4,10 @@
 {{-- navbar --}}
 <x-navbar />
 
+
+
+
+
 {{-- footer --}}
 <x-footer />
     
