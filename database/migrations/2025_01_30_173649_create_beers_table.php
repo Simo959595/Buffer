@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('beers', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
+            $table->string("type");
+            $table->string("cl");
+            $table->string("nat", 2);
+            $table->string("description");
             $table->timestamps();
         });
     }
@@ -25,3 +30,6 @@ return new class extends Migration
         Schema::dropIfExists('beers');
     }
 };
+
+
+// 1.48

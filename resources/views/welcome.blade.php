@@ -5,7 +5,7 @@
 <x-navbar />
 
 
-
+<h1>Inserisci la tua birra preferita</h1>
 
 
 {{-- footer --}}

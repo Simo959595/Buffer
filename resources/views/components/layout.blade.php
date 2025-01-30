@@ -10,7 +10,6 @@
     <title>Buffer 159</title>
 </head>
 <body>
-<x-navbar />
 {{$slot}}
 </body>
 </html>
