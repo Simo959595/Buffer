@@ -28,7 +28,8 @@ class BeerController extends Controller
     }
     
     public function beerIndex(){
-        return view("beer.beer.index");
+        $beers = Beer::all();
+        return view("beer.beer_index", ["beers"=> $beers]);
     }
 
 

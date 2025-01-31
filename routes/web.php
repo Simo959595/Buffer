@@ -17,4 +17,5 @@ Route::post("/beer/store", [BeerController::class, "beerStore"])->name("beer.sto
 Route::get("/beer/index", [BeerController::class, "beerIndex"])->name("beer.index");
 
 
-// SONO ARRIVATO AL MINUTO 1:06:43
+// SONO ARRIVATO AL MINUTO 2.01.33
+
