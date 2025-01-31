@@ -22,6 +22,3 @@ Route::get("/beer/show/{beer}", [BeerController::class, "beerShow"])->name("beer
 
 
 
-
-// SONO ARRIVATO AL MINUTO 2.01.33
-

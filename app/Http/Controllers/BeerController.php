@@ -35,4 +35,9 @@ class BeerController extends Controller
     }
 
 
+    public function beerShow(Beer $beer){
+        return view("beer.beer_show", compact("beer"));
+    }
+
+    
 }
