@@ -7,7 +7,7 @@
         </div>
 
         {{-- inizio form di inserimento prodotti --}}
-        <form method="POST" action="{{route("beer.store")}}">
+        <form method="POST" action="{{route("beer.store")}}" enctype="multipart/form-data">
 @csrf
 {{-- PROMEMORIA PER INSERIRE I DATI: protected $fillable = ["name", "type", "cl", "nat", "description"]; --}}
             {{-- primo f. --}}
@@ -21,6 +21,13 @@
                 <label class="form-label">Dimensione in "cl"</label>
                 <input type="text" class="form-control" aria-describedby="emailHelp" name="type">
             </div>
+
+{{-- INIZIO FORM PER FILE INPUT --}}
+<div class="mb-3">
+    <label for="formFile" class="form-label">Inserisci foto della birra</label>
+    <input class="form-control" type="file" id="formFile" name="img">
+</div>
+{{-- FINE FORM PER FILE INPUT --}}
             
             {{-- terzo f. --}}
             <div class="mb-3">

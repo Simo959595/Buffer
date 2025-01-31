@@ -16,6 +16,12 @@ Route::post("/beer/store", [BeerController::class, "beerStore"])->name("beer.sto
 // rotta di tipo get per il catalogo delle nostre birre
 Route::get("/beer/index", [BeerController::class, "beerIndex"])->name("beer.index");
 
+// ROTTA PARAMETRICA PER POTER VEDERE PIU' INFORMAZIONI ALL'INTERNO DELLE CARDS
+Route::get("/beer/show/{beer}", [BeerController::class, "beerShow"])->name("beer.show");
+
+
+
+
 
 // SONO ARRIVATO AL MINUTO 2.01.33
 
