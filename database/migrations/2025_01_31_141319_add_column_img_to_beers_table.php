@@ -11,14 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('beers', function (Blueprint $table) {
-            $table->id();
-            $table->string("name");
-            $table->string("type");
-            $table->string("cl");
-            $table->string("nat");
-            $table->string("description");
-            $table->timestamps();
+        Schema::table('beers', function (Blueprint $table) {
+            //
         });
     }
 
@@ -27,9 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('beers');
+        Schema::table('beers', function (Blueprint $table) {
+            //
+        });
     }
 };
-
-
-// 1.48
